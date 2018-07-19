@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>POLO360练习</title>
+		<!-- 引入reset.css用来清除浏览器的默认样式 -->
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<!-- 引入page-index -->
+		<link rel="stylesheet" type="text/css" href="css/page_index.css"/>
+	</head>
+	<body>
+		<!-- 
+			id class和文件的命名规范
+				- 命名时尽量使用英文，如果不会可以使用拼音
+					但是不要英文和拼音混用
+				- 命名格式
+					- 驼峰命名法
+						- 首字母小写，每个单词的开头字母大写
+							例子：aaaBbbCcc helloWorld
+					- 也可以所有的字母都小写，单词之间使用_或-链接
+						aaa_bbb_ccc aaa-bbb-ccc
+		-->
+		
+		<!--创建头部div header-->
+		<!--header开始-->
+		<div class="header w">
+			
+			<!-- 创建一个导航条 -->
+			<ul class="nav">
+				<li>
+					<a href="#">HOME</a>
+					<p>Back to home</p>
+				</li>
+				<li>
+					<a href="#">PRODUCTS</a>
+					<p>What we have for you</p>
+				</li>
+				<li>
+					<a href="#">SERVICES</a>
+					<p>Things we do</p>
+				</li>
+				<li>
+					<a href="#">BLOG</a>
+					<p>Follow our updates</p>
+				</li>
+				<li>
+					<a href="#">CONTACT</a>
+					<p>Ways to reach us</p>
+				</li>
+			</ul>
+			<!-- 在div中设置logo -->
+			<div class="logo">
+				<a href="#" title="一个非常非常好的网站">
+					<img src="img/logo.png" alt="网站的logo" />
+				</a>
+			</div>
+		</div>
+		<!--header结束-->
+		
+		<!--banner开始-->
+		<div class="banner w">
+			<img src="img/banner.png" alt="这是一个图片" />
+			<!--
+            	作者：467999785@qq.com
+            	时间：2018-05-29
+            	描述：创建一个div用于放置导航按钮
+            -->
+			<div class="pointerDiv">
+				<a href="#"></a>
+				<a class="active" href="#"></a>
+				<a href="#"></a>
+				<a href="#"></a>
+				<a href="#"></a>
+			</div>
+		</div>
+		<!--banner结束>
+		
+		<!--content开始-->
+		<div class="content w clearfix">
+			<h1>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit
+			</h1>
+			<div class="pl">
+				<h2>Perfect Logic</h2>
+				<p class="p1">All you want your website to do.</p>
+				<!--创建ImgDiv，此时图片看作是pl的内容-->
+				<div class="imgDiv">
+					<img src="img/img1.png" alt="这是第一副图"/>
+				</div>
+				<p class="p2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+				<a class="lm" href="#" >Learn More</a>
+			</div>
+			
+			<div class="cs">
+				<h2>Complete Solution</h2>
+				<p class="p1">A tool anything and everything you can think</p>
+				<div class="imgDiv">
+					<img src="img/img2.png" alt="这是第二幅图" />
+				</div>
+				<p class="p2">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciun tdolore magnam aliquam quaerat voluptatem.</p>
+				<a class="lm" href="#" >Learn More</a>
+			</div>
+			
+			<div class="uc">
+				<h2>Uber Culture</h2>
+				<p class="p1">Fresh. Modern and ready for future</p>
+				<div class="imgDiv">
+					<img src="img/img3.png" alt="这是第三幅图" />
+				</div>
+				<p class="p2">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+				<a class="lm" href="#" >Learn More</a>
+			</div>			
+		</div>
+		<!--content结束-->
+		
+		
+		<!--contact开始-->
+		<div class="contact w clearfix">
+			<div class="sc">
+				<h2 class="ctz">Social Connection</h2>
+				<p class="ps">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+				<div class="icon">
+					<a href="#"><img src="img/1.png"/></a>
+					<a href="#"><img src="img/2.png"/></a>
+					<a href="#"><img src="img/3.png" /></a>
+					<a href="#"><img src="img/4.png"/></a>
+					<a href="#"><img src="img/5.png "/></a>
+				</div>
+				<h2 class="ctz">Newsletter</h2>
+				<p class="ps">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+				<form action="#">
+					<input class="txt" type="text" placeholder="your email address"/>
+				</form>
+				<button class="but">Subscribe</button>
+			</div>
+			<div class="ct">
+				<h2 class="ctz">Contact</h2>
+				<form action="#">
+					<input class="txt" type="text" placeholder="your name"/><br />
+					<input class="txt" type="text" placeholder="your email address"/><br />
+					<textarea class="txta" name="mail" placeholder="message"></textarea>
+					<button class="but">Send it</button>
+				</form>
+			</div>
+			<div class="nu">
+				<h2 class="ctz">News Updates</h2>
+				<p>
+					<img src="img/6.png" alt="第一个游戏的图片"/>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+				</p>
+				<p>
+					<img src="img/7.png" alt="第二个游戏的图片"/>
+					Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
+				</p>
+				<p >
+					<img src="img/9.png" alt="第三个游戏的图片"/>
+					At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+				</p>
+				<button class="but">Visit our Blog</button>
+			</div>
+		</div>
+		<!--contact结束-->
+		
+		<!--footer开始-->
+		<div class="footer">
+			<div class="w">
+				<p class="copy">Cpyright 2010. Studio VIVROCKS. All Rights Reserved.</p>
+				<p>Site Powered by Wordpress. Design and Developed by VIVROCKS.</p>
+				<p><a href="#">Home</a> | <a href="#">About</a> | <a href="#">Products</a> | <a href="#">Services</a> | <a href="#">Contact</a></p>				
+				<p><a href="#">Privacy Policy</a> | <a href="#">Terms of use</a></p>
+			</div>
+		</div>
+		<!--footer结束-->
+		
+		<!--
+        	作者：467999785@qq.com
+        	时间：2018-05-29
+        	描述：处理IE6的PNG图片问题
+        -->
+		<!--[if IE 6]>
+			<script type="text/javascript" src="js/DD_belatedPNG_0.0.8a-min.js"></script>
+			<script type="text/javascript">DD_belatedPNG.fix(div,img,a,h1);</script>
+		<![endif]-->
+	</body>
+</html>
